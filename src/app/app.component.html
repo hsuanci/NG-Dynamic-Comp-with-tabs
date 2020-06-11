@@ -1,0 +1,10 @@
+<div>
+  <!-- <ng-template appDynamicComponent></ng-template> -->
+</div>
+
+<div>
+  <mat-tab-group animationDuration="0ms" (selectedTabChange)="selectedChange($event)">
+    <mat-tab *ngFor="let item of menuList;" label={{item}}></mat-tab>
+  </mat-tab-group>
+  <ng-template appDynamicComponent></ng-template>
+</div>
